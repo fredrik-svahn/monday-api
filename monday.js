@@ -43,12 +43,17 @@ class Monday {
             }
         });
     }
+
+    getPulseNotes(pulseId) {
+        return this.axios({
+            method: 'get',
+            url: `/pulses/${pulseId}/notes.json`
+        });
+    }
 }
 
 let m = new Monday('bc62963ff8ecbd9f3dc277948b452aa2');
-let x = m.getCell(
-    '189923245',
-    'text2',
+let x = m.getPulseNotes(
     '189926692'
 ).then(r => {
     console.log(r.data);

@@ -1,5 +1,5 @@
-// this function returns an array, after that we can search of a specific Note in this array 
-function getPulseNotes(token,pulseId) { 
+// this function returns an array, after that we can search of a specific Note in this array
+function getPulseNotes(token,pulseId) {
 
 var url1 = 'https://api.monday.com:443/v1/pulses/';
 
@@ -11,7 +11,7 @@ const axios = require('axios');
 axios.get(url)
   .then(function (response) {
     console.log(response.data);
-    
+
   })
   .catch(function (error) {
     console.log(error);
@@ -22,4 +22,4 @@ axios.get(url)
 }
 
 
-getPulseNotes('bc62963ff8ecbd9f3dc277948b452aa2','189926692');  
+getPulseNotes('bc62963ff8ecbd9f3dc277948b452aa2','189926692');
