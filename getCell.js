@@ -1,6 +1,6 @@
 //get a column value for a given pulse
-//token and boardId are constants and related to Sigma's account on Monday 
-function getCell(token,boardId,columnId,pulseId) { 
+//token and boardId are constants and related to Sigma's account on Monday
+function getCell(token,boardId,columnId,pulseId) {
 
 var url1 = 'https://api.monday.com:443/v1/boards/';
 
@@ -29,7 +29,6 @@ xhr.send(null);
 }
 
 //Example to test the function where the value has date type
-getCell('bc62963ff8ecbd9f3dc277948b452aa2','189923245','date7','189926692');    
+getCell('bc62963ff8ecbd9f3dc277948b452aa2','189923245','date7','189926692');
 //Anothe example where the value has text type
-//getCell('bc62963ff8ecbd9f3dc277948b452aa2','189923245','text2','189926692');   
-
+//getCell('bc62963ff8ecbd9f3dc277948b452aa2','189923245','text2','189926692');

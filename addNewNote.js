@@ -1,5 +1,5 @@
 
-function addNewNote(token,pulseId,title,content) { 
+function addNewNote(token,pulseId,title,content) {
 
 var url1 = 'https://api.monday.com:443/v1/pulses/';
 
@@ -31,8 +31,4 @@ axios({
 
 }
 
-addNewNote('bc62963ff8ecbd9f3dc277948b452aa2','189926692','newNote','This is my new note');    
-
-
-
-
+addNewNote('bc62963ff8ecbd9f3dc277948b452aa2','189926692','newNote','This is my new note');
