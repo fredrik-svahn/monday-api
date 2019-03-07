@@ -24,7 +24,7 @@ class Monday {
     addNewNote(pulseId,title,content) {
         return this.axios({
             method:'post',
-            url: `https://api.monday.com:443/v1/pulses/${pulseId}/notes.json`,
+            url: `/pulses/${pulseId}/notes.json`,
             data:
             {
                 "title" : title,
