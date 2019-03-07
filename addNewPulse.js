@@ -4,7 +4,7 @@
 
 
 
-function addNewPulse(token,boardId,userId,pulseName) { 
+function addNewPulse(token,boardId,userId,pulseName) {
 
 var url1 = 'https://api.monday.com:443/v1/boards/';
 
@@ -38,39 +38,4 @@ axios({
 }
 
 //we can get the user id from (get all users) in API's doc
-addNewPulse('bc62963ff8ecbd9f3dc277948b452aa2','189923245','7215271','myName');    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+addNewPulse('bc62963ff8ecbd9f3dc277948b452aa2','189923245','7215271','myName');
