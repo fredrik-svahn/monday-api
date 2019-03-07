@@ -1,7 +1,7 @@
 
 
 
-function updateTextCell(token,boardId,columnId,pulseId,text) { 
+function updateTextCell(token,boardId,columnId,pulseId,text) {
 
 var url1 = "https://api.monday.com:443/v1/boards/";
 
@@ -35,5 +35,3 @@ axios({
 
 }
 updateTextCell('bc62963ff8ecbd9f3dc277948b452aa2','189923245','text2','189926692','updated100');
-
-

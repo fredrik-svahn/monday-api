@@ -50,11 +50,26 @@ class Monday {
             url: `/pulses/${pulseId}/notes.json`
         });
     }
+
+    updateTextCell(boardId,columnId,pulseId,text) {
+        return this.axios({
+            method: 'put',
+            url: `/boards/${boardId}/columns/${columnId}/text.json`,
+            data:
+            {
+                pulse_id: pulseId,
+                text: text
+            }
+        });
+    }
 }
 
 let m = new Monday('bc62963ff8ecbd9f3dc277948b452aa2');
-let x = m.getPulseNotes(
-    '189926692'
+let x = m.updateTextCell(
+    '189923245',
+    'text2',
+    '189926692',
+    'updated100'
 ).then(r => {
     console.log(r.data);
 }).catch(e => {
