@@ -32,15 +32,26 @@ class Monday {
             }
       });
     }
+
+    getCell(boardId, columnId, pulseId) {
+        return this.axios({
+            method: 'get',
+            url: `/boards/${boardId}/columns/${columnId}/value.json`,
+            params:
+            {
+                pulse_id: pulseId
+            }
+        });
+    }
 }
 
 let m = new Monday('bc62963ff8ecbd9f3dc277948b452aa2');
-m.addNewPulse(
+let x = m.getCell(
     '189923245',
-    '7215271',
-    'someboard'
+    'text2',
+    '189926692'
 ).then(r => {
-    console.log(r);
+    console.log(r.data);
 }).catch(e => {
     console.log(e);
 });
